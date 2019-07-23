@@ -68,7 +68,12 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-  <modules>
-    <module>SpringCloudBorn_api</module>
-  </modules>
-</project>
+	
+	  <modules>
+	    <module>SpringCloudBorn_api</module>
+	    <module>SpringCloudBorn-provider-dept-8001</module>
+	    <module>SpringCloudBorn-consumer-dept-80</module>
+		<module>odule>SpringCloudBorn-eureka-7001</module>
+  	</modules>
+  
+  </project>
