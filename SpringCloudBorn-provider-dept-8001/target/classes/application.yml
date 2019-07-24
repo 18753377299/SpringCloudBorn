@@ -25,15 +25,17 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://localhost:7001/eureka
-#       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/      
+#      defaultZone: http://localhost:7001/eureka
+        #集群
+       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址     
  
+# eureka中监控信息完善 ，登录之后点击的内容，需要一个build中有$用来解析信息
 info: 
   app.name: atguigu-microservicecloud
   company.name: www.atguigu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.artifactId: SpringCloudBorn-provider-dept-8001
+  build.version: 0.0.1-SNAPSHOT
 

@@ -18,6 +18,7 @@ public class DeptController
 {
 	@Autowired
 	private DeptService service;
+	/*服务发现接口*/
 	@Autowired
 	private DiscoveryClient client;
 
@@ -45,10 +46,12 @@ public class DeptController
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
 	public Object discovery()
 	{
+		/*盘点eureka中的微服务的*/
 		List<String> list = client.getServices();
 		System.out.println("**********" + list);
 
-		List<ServiceInstance> srvList = client.getInstances("MICROSERVICECLOUD-DEPT");
+		/*找到指定的微服务*/
+		List<ServiceInstance> srvList = client.getInstances("SPRINGCLOUDBORN-DEPT");
 		for (ServiceInstance element : srvList) {
 			System.out.println(element.getServiceId() + "\t" + element.getHost() + "\t" + element.getPort() + "\t"
 					+ element.getUri());
