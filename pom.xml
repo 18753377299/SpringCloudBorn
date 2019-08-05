@@ -98,7 +98,10 @@
 		<module>SpringCloudBorn-eureka-7003</module>
     	<module>SpringCloudBorn-provider-dept-8002</module>
     	<module>SpringCloudBorn-provider-dept-8003</module>
-         <module>SpringCloudBorn-consumer-dept-feign</module>
-  </modules>
+        <module>SpringCloudBorn-consumer-dept-feign</module>
+    	<module>SpringCloudBorn-provider-Hystrix-dept-8001</module>
+    	<module>SpringCloudBorn-consumer-hystrix-dashboard</module>
+    	<module>SpringCloudBorn-zuul-gateway-9528</module>
+	  </modules>
   
   </project>
