@@ -102,6 +102,10 @@
     	<module>SpringCloudBorn-provider-Hystrix-dept-8001</module>
     	<module>SpringCloudBorn-consumer-hystrix-dashboard</module>
     	<module>SpringCloudBorn-zuul-gateway-9528</module>
+    	<module>SpringCloudBorn-config-3344</module>
+    	<module>SpringCloudBorn-config-client-3355</module>
+    	<module>SpringCloudBorn-config-eureka-7001</module>
+    	<module>SpringCloudBorn-config-dept-client-8001</module>
 	  </modules>
   
   </project>

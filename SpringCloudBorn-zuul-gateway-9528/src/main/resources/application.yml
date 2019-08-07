@@ -14,13 +14,14 @@ eureka:
     prefer-ip-address: true 
  
  
-#zuul: 
-#  #ignored-services: microservicecloud-dept
-#  prefix: /atguigu
-#  ignored-services: "*"
-#  routes: 
-#    mydept.serviceId: microservicecloud-dept
-#    mydept.path: /mydept/**
+zuul: 
+  #ignored-services: microservicecloud-dept
+  prefix: /atguigu   #设置统一的前缀
+  ignored-services: "*"   #忽略的请求
+  routes: 
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**   
+    #使用请求的mydept来代替microservicecloud-dept，用于隐藏microservicecloud-dept
  
 info:
   app.name: atguigu-microcloud
