@@ -1,4 +1,0 @@
-spring:
-  application:
-    name: SpringCloudBorn-config-eureka-client
-
