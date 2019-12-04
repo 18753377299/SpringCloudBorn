@@ -8,27 +8,29 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.example</groupId>
-  <artifactId>SpringCloudBorn-eureka-7001</artifactId>
+  <artifactId>SpringCloudBorn-config-eureka-7001</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SpringCloudBorn-eureka-7001</name>
+  <name>SpringCloudBorn-config-eureka-7001</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    
-    <!--eureka-server服务端 -->
+  		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- SpringCloudConfig配置 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
-		<!-- 修改后立即生效，热部署 -->
+		<!-- 热部署插件 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>springloaded</artifactId>
@@ -37,5 +39,5 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-  </dependencies>
+	</dependencies>
 </project>

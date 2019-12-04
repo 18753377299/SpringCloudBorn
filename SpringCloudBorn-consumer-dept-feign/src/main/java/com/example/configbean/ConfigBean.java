@@ -7,10 +7,9 @@ import org.springframework.web.client.RestTemplate;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RetryRule;
-
+//boot -->spring   applicationContext.xml --- @Configuration配置   ConfigBean = applicationContext.xml
 @Configuration
-public class ConfigBean //boot -->spring   applicationContext.xml --- @Configuration配置   ConfigBean = applicationContext.xml
-{ 
+public class ConfigBean { 
 	@Bean
 	@LoadBalanced//Spring Cloud Ribbon是基于Netflix Ribbon实现的一套客户端       负载均衡的工具。
 	public RestTemplate getRestTemplate(){

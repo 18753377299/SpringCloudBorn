@@ -6,6 +6,7 @@ import org.SpringCloudBorn_api.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.service.DeptService;
 
 @RestController
-public class DeptController
-{
+//@Controller
+public class DeptController{
+	
 	@Autowired
 	private DeptService service;
 	/*服务发现接口*/
@@ -28,7 +30,9 @@ public class DeptController
 	{
 		return service.add(dept);
 	}
-
+	/**
+	 * @功能： 用于根据id进行查询
+	 * */
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
 	public Dept get(@PathVariable("id") Long id)
 	{
@@ -41,7 +45,9 @@ public class DeptController
 		return service.list();
 	}
 
-	
+	/**
+	 * @功能： 用于查找注册的所有的服务的名称，已经服务请求的信息
+	 * */
 //	@Autowired
 //	private DiscoveryClient client;
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
