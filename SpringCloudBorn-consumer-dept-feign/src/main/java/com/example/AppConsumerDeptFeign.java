@@ -16,10 +16,8 @@ import org.springframework.context.annotation.ComponentScan;
 //@EnableFeignClients
 @EnableFeignClients(basePackages= {"com.example"})
 @ComponentScan("com.example")
-public class AppConsumerDeptFeign 
-{
-    public static void main( String[] args )
-    {
+public class AppConsumerDeptFeign {
+    public static void main( String[] args ){
         System.out.println( "Hello World!" );
         SpringApplication.run(AppConsumerDeptFeign.class, args);
     }

@@ -21,8 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 //@FeignClient(value = "MICROSERVICECLOUD-DEPT")
 @FeignClient(value = "SpringCloudBorn-dept",fallbackFactory=DeptClientServiceFallbackFactory.class)
-public interface DeptClientService
-{
+public interface DeptClientService{
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
 	public Dept get(@PathVariable("id") long id);
 

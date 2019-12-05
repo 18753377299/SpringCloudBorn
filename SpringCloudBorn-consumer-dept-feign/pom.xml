@@ -17,7 +17,7 @@
   </properties>
   <dependencies>
 	    <dependency>
-	    	<!-- 自己定义的api -->
+	    	<!-- 自己定义的api,与引入的项目中的groupId 中的一样就可以了 -->
 			<groupId>com.example</groupId>
 			<artifactId>SpringCloudBorn_api</artifactId>
 			<version>${project.version}</version>

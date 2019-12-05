@@ -17,10 +17,8 @@ import com.myrule.MySelfRule;
 //在启动该微服务的时候就能去加载我们的自定义Ribbon配置类，从而使配置生效
 //@RibbonClient(name="MICROSERVICECLOUD-DEPT",configuration=MySelfRule.class)
 @RibbonClient(name="SpringCloudBorn-dept",configuration=MySelfRule.class)
-public class AppConsumerDept_80 
-{
-    public static void main( String[] args )
-    {
+public class AppConsumerDept_80 {
+    public static void main( String[] args ){
         System.out.println( "Hello World!" );
         SpringApplication.run(AppConsumerDept_80.class, args);
     }

@@ -35,6 +35,7 @@ public class DeptController_Consumer
 	}
 
 	
+	
 ////	private static final String REST_URL_PREFIX = "http://localhost:8001";
 //	private static final String REST_URL_PREFIX = "http://SPRINGCLOUDBORN-DEPT";
 //

@@ -1,6 +1,9 @@
 server: 
   port: 81
   
+spring: 
+  application:
+    name:  SpringCloudBorn-consumer-dept-feign
 #开启
 feign: 
   hystrix: 
@@ -13,6 +16,6 @@ eureka:
         #集群
 #       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
   instance:
-    instance-id: microservicecloud-dept80
+    instance-id: microservicecloud-dept81
     prefer-ip-address: true     #访问路径可以显示IP地址  
     
