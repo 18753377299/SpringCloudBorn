@@ -4,10 +4,12 @@ import java.util.List;
 
 import org.SpringCloudBorn_api.entities.Dept;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import feign.hystrix.FallbackFactory;
 
 @Component // 不要忘记添加，不要忘记添加
+//@Service
 public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptClientService>
 {
 	@Override
