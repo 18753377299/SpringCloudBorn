@@ -14,13 +14,13 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableEurekaClient
 //@EnableFeignClients
-@EnableFeignClients(basePackages= {"com.example"})
-@ComponentScan("com.example")
-public class AppConsumerDeptFeign 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+//@EnableFeignClients(basePackages= {"com.example"})
+//@ComponentScan("com.example")
+//这个扫描的位置应该是service的位置，之前是因为扫描不到这个包出现的问题
+@EnableFeignClients(basePackages= {"org.SpringCloudBorn_api"})
+@ComponentScan("org.SpringCloudBorn_api")
+public class AppConsumerDeptFeign {
+    public static void main( String[] args ){
         SpringApplication.run(AppConsumerDeptFeign.class, args);
     }
 }

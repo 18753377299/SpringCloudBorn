@@ -18,7 +18,8 @@
 		<log4j.version>1.2.17</log4j.version>
 		<lombok.version>1.16.18</lombok.version>
 	</properties>
-
+	<!-- dependencyManagement把dependencies包起来,这样有啥用了.
+	就是在我们子项目继承父项目的时候,并不会引入所有的dependency,而是子项目写了哪个就引入哪个 -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

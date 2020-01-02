@@ -7,9 +7,9 @@
     <artifactId>SpringCloudBorn</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.example</groupId>
+<!--   <groupId>com.example</groupId> -->
   <artifactId>SpringCloudBorn_api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+<!--   <version>0.0.1-SNAPSHOT</version> -->
   <name>SpringCloudBorn_api</name>
   <url>http://maven.apache.org</url>
   <properties>
