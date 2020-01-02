@@ -5,10 +5,17 @@ server:
 spring:
   application:
     name:  SpringCloudBorn-config
+   #默认是从git上读取配置文件，加上这个可以改变读取配置文件位置
+  profiles: 
+    active: native
   cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/18753377299/springCloudConfig.git #GitHub上面的git仓库名字
- #通过下面地址进行访问可以请求到github上面的配置文件：http://localhost:3344/application-test.yml
+    config: 
+      server: 
+        #通过下面地址进行访问可以请求到github上面的配置文件：http://localhost:3344/application-test.yml
+#        git:
+#          uri: https://github.com/18753377299/springCloudConfig.git #GitHub上面的git仓库名字
+        #直接访问本地文件路径，来访问配置文件
+        native: 
+          searchLocations: file:C:/FileWorkspace/eclipse_workspace/springcloud-config-1001/src/main/resources/config
+
 

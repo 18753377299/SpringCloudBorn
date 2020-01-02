@@ -6,7 +6,6 @@ import org.SpringCloudBorn_api.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,8 +50,13 @@ public class DeptController{
 //	@Autowired
 //	private DiscoveryClient client;
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
-	public Object discovery()
-	{
+	public Object discovery(){
+		try {
+			System.out.println("===========================");
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		/*盘点eureka中的微服务的*/
 		List<String> list = client.getServices();
 		System.out.println("**********" + list);

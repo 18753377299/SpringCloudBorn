@@ -1,2 +1,4 @@
 server:
   port: 9001
+  
+#访问 http://localhost:9001/hystrix 的时候会出现Hystrix Dashboard界面。

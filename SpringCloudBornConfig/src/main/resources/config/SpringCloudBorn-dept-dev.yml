@@ -1,15 +1,14 @@
-#服务提供方，提供增删改查接口
-server:
-  port: 8001
-  
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: org.SpringCloudBorn_api.entities    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-    
+  #  日志平台输出（方便查看输出sql语句）
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl 
+      
 spring:
-   application:
+   application: 
     name: SpringCloudBorn-dept 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
@@ -22,21 +21,3 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-      
-eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url: 
-      defaultZone: http://localhost:7001/eureka
-        #集群
-#       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
-  instance:
-    instance-id: microservicecloud-dept8001
-    prefer-ip-address: true     #访问路径可以显示IP地址     
- 
-# eureka中监控信息完善 ，登录之后点击的内容，需要一个build中有$用来解析信息
-info: 
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
-

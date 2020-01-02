@@ -118,6 +118,7 @@
     	<module>SpringCloudBorn-config-client-3355</module>
     	<module>SpringCloudBorn-config-eureka-7001</module>
     	<module>SpringCloudBorn-config-dept-client-8001</module>
-	  </modules>
+    	<module>SpringCloudBornConfig</module>
+  </modules>
   
   </project>

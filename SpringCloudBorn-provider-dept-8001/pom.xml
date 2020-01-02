@@ -9,6 +9,7 @@
   </parent>
   <groupId>com.example</groupId>
   <artifactId>SpringCloudBorn-provider-dept-8001</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>SpringCloudBorn-provider-dept-8001</name>
   <url>http://maven.apache.org</url>
