@@ -38,4 +38,8 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+#启用Feign对Hystrix的支持
+#feign: 
+#  hystrix: 
+#   enabled: true
 
