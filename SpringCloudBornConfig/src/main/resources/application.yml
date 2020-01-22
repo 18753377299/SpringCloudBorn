@@ -1,6 +1,6 @@
 eureka:
   client:
-    healthcheck:
+    healthcheck: 
       enabled: true #健康检测，这个一定要在application.yml文件中，否则可能出现Eureka状态为Unknown的问题
 
 
