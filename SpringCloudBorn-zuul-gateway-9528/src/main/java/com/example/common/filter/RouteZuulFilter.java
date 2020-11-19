@@ -35,7 +35,7 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 
 
-
+/*2、将请求路由到微服务*/
 public class RouteZuulFilter extends ZuulFilter{
 	private Logger logger = LoggerFactory.getLogger(RouteZuulFilter.class);
 	protected ProxyRequestHelper helper;

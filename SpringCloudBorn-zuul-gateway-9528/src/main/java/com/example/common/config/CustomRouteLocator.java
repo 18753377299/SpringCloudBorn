@@ -12,9 +12,9 @@ import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties.ZuulRoute;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.util.StringUtils;
 
 import com.example.func.dept.po.ZuulRouteVO;
+import org.springframework.util.StringUtils;
 
 public class CustomRouteLocator extends SimpleRouteLocator implements RefreshableRouteLocator{
 

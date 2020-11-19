@@ -28,7 +28,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
-		<!-- 修改后立即生效，热部署 -->
+		<!-- 修改后立即生效，热部署  begin-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>springloaded</artifactId>
@@ -37,6 +37,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
+		<!-- 修改后立即生效，热部署  end-->
   </dependencies>
   <build>
   	   <finalName>${project.artifactId}</finalName>

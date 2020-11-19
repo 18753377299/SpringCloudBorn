@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
+/*1.请求被路由之前被调用，身份验证*/
 
 public class PreZuulFilter extends  ZuulFilter{
 

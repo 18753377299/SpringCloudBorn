@@ -1,32 +1,16 @@
+#  集成config配置文件
 server: 
   port: 9527
  
 spring: 
   application:
     name: SpringCloudBorn-zuul-gateway
- 
-eureka: 
-  client: 
-    service-url: 
-      defaultZone: http://eureka7001:7001/eureka
-      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
-  instance:
-    instance-id: gateway-9527.com
-    prefer-ip-address: true 
- 
- 
-zuul: 
-  #ignored-services: microservicecloud-dept
-  prefix: /atguigu   #设置统一的前缀
-  ignored-services: "*"   #忽略的请求
-  routes: 
-    mydept.serviceId: microservicecloud-dept
-    mydept.path: /mydept/**   
-    #使用请求的mydept来代替microservicecloud-dept，用于隐藏microservicecloud-dept
- 
-info:
-  app.name: atguigu-microcloud
-  company.name: www.atguigu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
-
+  config: 
+    name: ${spring.application.name}
+    profile: ${config.profile:dev}  
+    discovery: 
+          enabled: true #使用服务发现组件中的Config Server，默认false
+          service-id: config-server  #Config Server的名字，默认configserver  
+  profiles:  
+    active: test
+           

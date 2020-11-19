@@ -1,0 +1,47 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: SpringCloudBorn-zuul-gateway
+  datasource: 
+#  platform_devdb
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/riskcontrol?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+    validation-query: SELECT 1
+    test-on-borrow: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 18800
+    jdbc-interceptors: ConnectionState;SlowQueryReport(threshold=0)
+    
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001:7001/eureka
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+ 
+zuul: 
+  #ignored-services: microservicecloud-dept
+  prefix: /atguigu   #设置统一的前缀
+  ignored-services: "*"   #忽略的请求
+  routes: 
+    mydept.serviceId: leaveBusiness-server
+    mydept.path: /mydept/**   
+    #使用请求的mydept来代替microservicecloud-dept，用于隐藏microservicecloud-dept
+ 
+info:
+  app.name: atguigu-microcloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

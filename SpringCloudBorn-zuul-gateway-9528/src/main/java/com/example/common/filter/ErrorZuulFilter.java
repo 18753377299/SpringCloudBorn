@@ -12,6 +12,8 @@ import org.slf4j.LoggerFactory;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
+
+/*在其他阶段发生错误时执行。*/
 public class ErrorZuulFilter extends ZuulFilter {
 
 	private Logger Logger = LoggerFactory.getLogger(ErrorZuulFilter.class);
