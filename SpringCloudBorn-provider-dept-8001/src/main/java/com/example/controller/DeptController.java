@@ -2,6 +2,8 @@ package com.example.controller;
 
 import java.util.List;
 
+import com.example.common.utils.SpringUtils;
+import com.example.hystrix.DeptClientService;
 import org.SpringCloudBorn_api.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -15,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.service.DeptService;
 
 @RestController
-//@Controller
 public class DeptController{
 	
 	@Autowired
@@ -23,6 +24,10 @@ public class DeptController{
 	/*服务发现接口*/
 	@Autowired
 	private DiscoveryClient client;
+
+	@Autowired
+	DeptClientService deptClientService;
+
 
 	@RequestMapping(value = "/dept/add", method = RequestMethod.POST)
 	public boolean add(@RequestBody Dept dept)
@@ -33,14 +38,16 @@ public class DeptController{
 	 * @功能： 用于根据id进行查询
 	 * */
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
-	public Dept get(@PathVariable("id") Long id)
-	{
+	public Dept get(@PathVariable("id") Long id) {
+		System.out.println("======dept==get======>"+id);
 		return service.get(id);
 	}
 
 	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
-	public List<Dept> list()
-	{
+	public List<Dept> list(){
+//		DeptClientService deptClientService = SpringUtils.getBean(DeptClientService.class);
+		Dept dept = deptClientService.get(1);
+		System.out.println(dept);
 		return service.list();
 	}
 

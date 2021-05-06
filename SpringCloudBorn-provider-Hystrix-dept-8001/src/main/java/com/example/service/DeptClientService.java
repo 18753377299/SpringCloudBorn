@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.service.impl.DeptClientServiceFallbackFactory;
 
-@FeignClient(value="EUREKA-CLIENT",fallbackFactory=DeptClientServiceFallbackFactory.class)
+@FeignClient(value="SPRINGCLOUDBORN-DEPT",fallbackFactory=DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 	
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)

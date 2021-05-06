@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-3344" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-3344/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-3344/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-client-3355" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-client-3355/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-client-3355/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-dept-client-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-dept-client-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-dept-client-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-eureka-7001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-config-eureka-7001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-80/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-consumer-hystrix-dashboard/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-eureka-7003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8003" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringCloudBorn-zuul-gateway-9528" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8003/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBornConfig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornConfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornConfig/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornLeave" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornZuulGateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudBorn_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudBorn_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>

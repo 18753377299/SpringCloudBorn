@@ -4,13 +4,13 @@
 
 <mapper namespace="com.example.dao.DeptDao">
 
-	<select id="findById" resultType="Dept" parameterType="Long">
+	<select id="findById" resultType="org.SpringCloudBorn_api.entities.Dept" parameterType="Long">
 		select deptno,dname,db_source from dept where deptno=#{deptno};
 	</select>
-	<select id="findAll" resultType="Dept">
+	<select id="findAll" resultType="org.SpringCloudBorn_api.entities.Dept">
 		select deptno,dname,db_source from dept;
 	</select>
-	<insert id="addDept" parameterType="Dept">
+	<insert id="addDept" parameterType="org.SpringCloudBorn_api.entities.Dept">
 		INSERT INTO dept(dname,db_source) VALUES(#{dname},DATABASE());
 	</insert>
 

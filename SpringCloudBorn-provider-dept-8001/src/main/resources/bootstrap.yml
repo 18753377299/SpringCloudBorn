@@ -2,11 +2,11 @@
 server:
   port: 8001
   
-#mybatis:
-#  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-#  type-aliases-package: org.SpringCloudBorn_api.entities    # 所有Entity别名类所在包
-#  mapper-locations:
-#  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: org.SpringCloudBorn_api.entities    # 所有Entity别名类所在包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
    application:
@@ -14,25 +14,27 @@ spring:
    profiles:
      active: local
    cloud:
-    config:       
+    config:
       name: ${spring.application.name}
       profile: ${config.profile:dev}
-#      username: ${myauth.config.username}
+      enabled: false
+  #      username: ${myauth.config.username}
 #      password: ${myauth.config.password}
-      discovery: 
-        enabled: true #使用服务发现组件中的Config Server，默认false
-        service-id: SpringCloudBornConfig  #Config Server的名字，默认configserver         
-#   datasource: 
-#    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
-#    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-#    url: jdbc:mysql://localhost:3306/riskcontrol              # 数据库名称
-#    username: root
+#      discovery:
+#        enabled: true #使用服务发现组件中的Config Server，默认false
+#        service-id: SpringCloudBornConfig  #Config Server的名字，默认configserver
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+    url: jdbc:mysql://localhost:3306/riskcontrol              # 数据库名称
+    username: root
 #    password: admin
-#    dbcp2:
-#      min-idle: 5                                           # 数据库连接池的最小维持连接数
-#      initial-size: 5                                       # 初始化连接数
-#      max-total: 5                                          # 最大连接数
-#      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+    password: 1234
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
 
 ---
 spring:
@@ -40,7 +42,8 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:            
-      defaultZone: http://eureka7001:7001/eureka/
+#      defaultZone: http://eureka7001:7001/eureka/
+      defaultZone: http://127.0.0.1:7001/eureka/
         #集群
 #       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
   instance:
@@ -53,6 +56,7 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
 #提高日志级别为WARN,加入如上配置后，运行一段时间发现不再打印小于等于info级别的日志
 logging:
   level:
