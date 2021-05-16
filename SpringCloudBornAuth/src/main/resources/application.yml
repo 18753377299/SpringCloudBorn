@@ -1,0 +1,16 @@
+server:
+  port: 9000
+    servlet:
+      context-path: /auth #这里一定要加上contextPath，这个坑自己体会吧
+
+#server:
+#  port: 9002
+#security:
+#  oauth2:
+#    client:
+#      client-id: client
+#      client-secret: secret
+#      access-token-uri: http://localhost:9000/auth/oauth/token
+#      user-authorization-uri: http://localhost:9000/auth/oauth/authorize
+#    resource:
+#      token-info-uri: http://localhost:9000/auth/oauth/check_token

@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudBornLeave/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudBornAuth/pom.xml" />
       </list>
     </option>
   </component>

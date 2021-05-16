@@ -16,6 +16,7 @@
         <module name="SpringCloudBorn-config-client-3355" />
         <module name="SpringCloudBorn-config-eureka-7001" />
         <module name="SpringCloudBorn-eureka-7002" />
+        <module name="SpringCloudBornAuth" />
         <module name="SpringCloudBorn_api" />
         <module name="SpringCloudBorn-consumer-hystrix-dashboard" />
         <module name="SpringCloudBorn-zuul-gateway-9528" />
@@ -31,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudBornAuth" options="" />
       <module name="SpringCloudBornLeave" options="-parameters" />
       <module name="leave" options="-parameters" />
     </option>

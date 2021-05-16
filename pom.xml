@@ -135,6 +135,8 @@
 		<module>SpringCloudBorn-eureka-7001</module>
     	<module>SpringCloudBornConfig</module>
 		<module>SpringCloudBornZuulGateway</module>
+		<module>SpringCloudBornAuth</module>
+
   </modules>
 	
   
