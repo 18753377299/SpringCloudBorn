@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.leave.dao.LeaveBasicDao">
+	<!-- 通用查询结果对象-->
+	<resultMap id="BaseResultMap" type="com.example.leave.po.LeaveBasic">
+		 <id column="id" property="id"/> 
+		 <result column="jobNum" property="jobNum"/> 
+		 <result column="teamCode" property="teamCode"/> 
+		 <result column="teamName" property="teamName"/> 
+		 <result column="annualDay" property="annualDay"/> 
+		 <result column="usedAnnualDay" property="usedAnnualDay"/> 
+		 <result column="retreatDay" property="retreatDay"/> 
+		 <result column="usedRetreatDay" property="usedRetreatDay"/> 
+		 <result column="sickDay" property="sickDay"/> 
+		 <result column="usedSickDay" property="usedSickDay"/> 
+		 <result column="insertTimeForHis" property="insertTimeForHis"/> 
+		 <result column="operateTimeForHis" property="operateTimeForHis"/> 
+		 <result column="employeeName" property="employeeName"/> 
+	</resultMap>
+
+	<!-- 通用查询结果列-->
+	<sql id="Base_Column_List">
+		 id, jobNum, teamCode, teamName, annualDay,
+		 usedAnnualDay, retreatDay, usedRetreatDay, sickDay, usedSickDay,
+		 insertTimeForHis, operateTimeForHis, employeeName
+	</sql>
+
+	<!-- 按对象查询记录的WHERE部分 -->
+	<sql id="Base_Select_By_Entity_Where">
+		<if test="id != null   and id != ''" >
+			and id = #{id}
+		</if>
+		<if test="jobNum != null   and jobNum != ''" >
+			and jobNum = #{jobNum}
+		</if>
+		<if test="teamCode != null   and teamCode != ''" >
+			and teamCode = #{teamCode}
+		</if>
+		<if test="teamName != null   and teamName != ''" >
+			and teamName = #{teamName}
+		</if>
+		<if test="annualDay != null   and annualDay != ''" >
+			and annualDay = #{annualDay}
+		</if>
+		<if test="usedAnnualDay != null   and usedAnnualDay != ''" >
+			and usedAnnualDay = #{usedAnnualDay}
+		</if>
+		<if test="retreatDay != null   and retreatDay != ''" >
+			and retreatDay = #{retreatDay}
+		</if>
+		<if test="usedRetreatDay != null  and usedRetreatDay != ''" >
+			and usedRetreatDay = #{usedRetreatDay}
+		</if>
+		<if test="sickDay != null  and sickDay != ''" >
+			and sickDay = #{sickDay}
+		</if>
+		<if test="usedSickDay != null  and usedSickDay != ''" >
+			and usedSickDay = #{usedSickDay}
+		</if>
+		<if test="insertTimeForHis != null  and insertTimeForHis != ''" >
+			and insertTimeForHis = #{insertTimeForHis}
+		</if>
+		<if test="operateTimeForHis != null  and operateTimeForHis != ''" >
+			and operateTimeForHis = #{operateTimeForHis}
+		</if>
+		<if test="employeeName != null  and employeeName != ''" >
+			and employeeName = #{employeeName}
+		</if>
+	</sql>
+
+	
+	<!-- 	根据id查询请假信息 -->
+	<select id="getLeaveBasicById" resultType="com.example.leave.po.LeaveBasic" parameterType="Integer">
+		select * from  leave_basic where id=#{id}
+	</select>
+	
+	<!-- 查询请假基础表信息 -->
+	<select id="selectLeaveBasicInfo" resultMap="BaseResultMap" parameterType="com.example.leave.po.LeaveBasic">
+	 	select 
+	 		<include refid="Base_Column_List"/>
+	 		from  leave_main 
+	 		<where>
+	 			<include refid="Base_Select_By_Entity_Where" />
+	 		</where>
+	 </select>
+	
+</mapper>

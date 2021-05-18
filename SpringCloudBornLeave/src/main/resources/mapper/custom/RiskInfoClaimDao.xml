@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.riskinfo.dao.RiskInfoClaimDao">
+	<!-- 通用查询结果对象-->
+	<resultMap id="RiskInfoClaimResultMap"  type="com.example.riskinfo.po.RiskInfoClaim">
+		<id column="serialno" property="serialNo" />
+		<result column="comcode" property="comCode" />
+<!-- 		<result column="operatorcode" property="comCodeCName" /> -->
+		<result column="operatorcode" property="operatorCode" />
+		<result column="operatorname" property="operatorName"/>
+		<result column="claimname" property="claimName" />
+		<result column="riskname" property="riskName" />
+		<result column="riskcname" property="riskCname" />
+		<result column="claimreason" property="claimReason" />
+		<result column="profession" property="profession"/>
+		<result column="claimamount" property="claimAmount" />
+		<result column="claimyear" property="claimYear" />
+		<result column="sender" property="sender"/>
+		<result column="url" property="url"/>
+<!-- 		<result column="" property="riskNameC" /> -->
+		<result column="remark" property="remark" />
+		<result column="validstatus" property="validStatus" />
+<!-- 		<result column="" property="validStatusName" /> -->
+		<result column="inserttimeforhis" property="insertTimeForHis" />
+		<result column="operatetimeforhis" property="operateTimeForHis" />
+	</resultMap>
+	
+	<!-- 通用查询结果列-->
+	<sql id="Base_Column_List">
+		 serialNo, comCode, operatorCode, operatorName, claimName,
+		 riskName, riskCname, claimReason, profession, claimAmount,
+		 claimYear, sender, url,remark,validStatus,insertTimeForHis,operateTimeForHis
+	</sql>
+	<!-- 	查询的where部分 -->
+	<sql id="Base_select_By_Entity">
+		<if test="riskInfoClaimVo.claimName !=null and riskInfoClaimVo.claimName!=''">
+			and  claimName like CONCAT ('%',#{riskInfoClaimVo.claimName,jdbcType=VARCHAR},'%')
+<!-- 			and  claimName like "%"#{claimName,jdbcType=VARCHAR}"%" -->
+		</if>
+		<if test="riskInfoClaimVo.riskCname !=null and riskInfoClaimVo.riskCname !=''">
+			and  riskCname like CONCAT ('%',#{riskInfoClaimVo.riskCname,jdbcType=VARCHAR},'%')
+		</if>
+		<if test="riskInfoClaimVo.claimYear !=null and riskInfoClaimVo.claimYear !=''">
+			and  claimYear = #{riskInfoClaimVo.claimYear}
+		</if>
+		<if test="riskInfoClaimVo.claimAmountLow !=null and riskInfoClaimVo.claimAmountLow !=''">
+			and  CLAIMAMOUNT &gt;= #{riskInfoClaimVo.claimAmountLow}
+		</if>
+		<if test="riskInfoClaimVo.claimAmountHigh !=null and riskInfoClaimVo.claimAmountHigh !=''">
+			and  CLAIMAMOUNT &lt;= #{riskInfoClaimVo.claimAmountHigh}
+		</if>
+		<!-- 通过length来判断数组非空  -->
+		<if test="riskInfoClaimVo.riskNames !=null and riskInfoClaimVo.riskNames.length >0">
+			and  riskName in 
+			<foreach collection="riskInfoClaimVo.riskNames" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+		<if test="riskInfoClaimVo.professions !=null and riskInfoClaimVo.professions.length >0">
+			and  PROFESSION in 
+			<foreach collection="riskInfoClaimVo.professions" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+		<if test="riskInfoClaimVo.senders !=null and riskInfoClaimVo.senders.length >0">
+			and  SENDER in 
+			<foreach collection="riskInfoClaimVo.senders" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+		<if test="riskInfoClaimVo.claimReasons !=null and riskInfoClaimVo.claimReasons.length >0">
+			and  CLAIMREASON in 
+			<foreach collection="riskInfoClaimVo.claimReasons" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+	</sql> 
+	<!--典型案例分析进行分页查询 -->
+	<select id="queryRiskInfoClaim" resultType="com.example.riskinfo.po.RiskInfoClaim">
+<!-- 	 parameterType="" -->
+		<!--使用<bind> 标签可以在xml中进行计算 -->
+		<bind name= "pageStart" value="(pageNo-1)*pageSize"></bind>
+		select * from  riskinfo_claim  
+		<where>
+			<include refid="Base_select_By_Entity"/>
+		</where>
+		limit  #{pageStart},#{pageSize} 
+	</select>
+	
+	<select id="queryCountRiskInfoClaim" resultType="Integer">
+		<!--使用<bind> 标签可以在xml中进行计算 -->
+		select count(*) from  riskinfo_claim 
+		<where>
+			<include refid="Base_select_By_Entity"/>
+		</where>
+	</select>
+	
+</mapper>

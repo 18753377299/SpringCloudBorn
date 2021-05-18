@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.leave.dao.LeaveMainDao">
+<!-- 	通用的查询对象 -->
+	<resultMap id="LeaveMainResultMap" type="com.example.leave.po.LeaveMain">
+		<id column="id" property="id"/>
+		<result column="jobNum"  property="jobNum"/>
+		<result column="employeeName"  property="employeeName"/>
+		<result column="teamCode"  property="teamCode"/>
+		<result column="teamName"  property="teamName"/>
+		<result column="projectCode"  property="projectCode"/>
+		<result column="projectName"  property="projectName"/>
+		<result column="leaveType"  property="leaveType"/>
+		<result column="detailDesc"  property="detailDesc"/>
+		<result column="startTime"  property="startTime"/>
+		<result column="endTime"  property="endTime"/>
+		<result column="sumDay"  property="sumDay"/>
+		<result column="flag"  property="flag"/>
+		<result column="insertTimeForHis"  property="insertTimeForHis"/>
+		<result column="operateTimeForHis"  property="operateTimeForHis"/>
+	</resultMap>
+
+	<!--通用的查询结果列 -->
+	<sql id="Base_Column_list">
+		 id, jobNum, teamCode, teamName, leaveType,
+		 detailDesc, startTime, endTime, sumDay, insertTimeForHis,
+		 operateTimeForHis, employeeName	
+	</sql>
+	<!-- 	查询的where部分 -->
+	<sql id="Base_select_By_Entity">
+		<if test="id != null   and id != ''" >
+			and id = #{id}
+		</if>
+		<if test="jobNum != null  and jobNum != ''" >
+			and jobNum = #{jobNum}
+		</if>
+		<if test="teamCode != null  and teamCode != ''" >
+			and teamCode = #{teamCode}
+		</if>
+		<if test="teamName != null  and teamName != ''" >
+			and teamName = #{teamName}
+		</if>
+		<if test="leaveType != null  and leaveType != ''" >
+			and leaveType = #{leaveType}
+		</if>
+		<if test="detailDesc != null  and detailDesc != ''" >
+			and detailDesc = #{detailDesc}
+		</if>
+		<if test="startTime != null" >
+			and startTime = #{startTime}
+		</if>
+		<if test="endTime != null" >
+			and endTime = #{endTime}
+		</if>
+		<if test="sumDay != null  and sumDay != ''" >
+			and sumDay = #{sumDay}
+		</if>
+		<if test="insertTimeForHis != null" >
+			and insertTimeForHis = #{insertTimeForHis}
+		</if>
+		<if test="operateTimeForHis != null" >
+			and operateTimeForHis = #{operateTimeForHis}
+		</if>
+		<if test="employeeName != null  and employeeName != ''" >
+			and employeeName = #{employeeName}
+		</if>
+	</sql>
+	
+	<!-- 查询请假主表信息 -->
+	<select id="selectLeaveMainInfo" resultMap="LeaveMainResultMap" parameterType="com.example.leave.po.LeaveMain">
+	 	select 
+	 		<include refid="Base_Column_list"/>
+	 		from  leave_main 
+	 		<where>
+	 			<include refid="Base_select_By_Entity" />
+	 		</where>
+	 </select>
+	<!-- 	 插入请假信息  insertLeaveMainInfo -->
+	<!-- 插入一条记录(为空的字段不操作) -->
+	<insert id="insertLeaveMainInfo" useGeneratedKeys="true" keyProperty="id" parameterType="com.example.leave.po.LeaveMain">
+		insert into leave_main
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				id,
+			</if>
+			<if test="jobNum != null" >
+				jobNum,
+			</if>
+			<if test="teamCode != null" >
+				teamCode,
+			</if>
+			<if test="teamName != null" >
+				teamName,
+			</if>
+			<if test="leaveType != null" >
+				leaveType,
+			</if>
+			<if test="detailDesc != null" >
+				detailDesc,
+			</if>
+			<if test="startTime != null" >
+				startTime,
+			</if>
+			<if test="endTime != null" >
+				endTime,
+			</if>
+			<if test="sumDay != null" >
+				sumDay,
+			</if>
+			operateTimeForHis,
+			<if test="employeeName != null" >
+				employeeName,
+			</if>
+		</trim>
+		values <trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id},
+			</if>
+			<if test="jobNum != null" >
+				#{jobNum},
+			</if>
+			<if test="teamCode != null" >
+				#{teamCode},
+			</if>
+			<if test="teamName != null" >
+				#{teamName},
+			</if>
+			<if test="leaveType != null" >
+				#{leaveType},
+			</if>
+			<if test="detailDesc != null" >
+				#{detailDesc},
+			</if>
+			<if test="startTime != null" >
+				#{startTime},
+			</if>
+			<if test="endTime != null" >
+				#{endTime},
+			</if>
+			<if test="sumDay != null" >
+				#{sumDay},
+			</if>
+			now(),
+			<if test="employeeName != null" >
+				#{employeeName},
+			</if>
+		</trim>
+	</insert>
+	<!-- 	根据日期查询请假信息 -->
+	<select id="getLeaveMainByDate" resultType="com.example.leave.po.LeaveMain" parameterType="String">
+		select * from  leave_Main where id=#{id}
+	</select>
+
+
+
+</mapper>

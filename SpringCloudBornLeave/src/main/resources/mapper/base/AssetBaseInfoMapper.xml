@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fintech.oa.business.com.example.asset.dao.AssetBaseInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.fintech.oa.business.com.example.asset.po.AssetBaseInfo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="asset_no" property="assetNo" jdbcType="VARCHAR" />
+    <result column="asset_nature" property="assetNature" jdbcType="VARCHAR" />
+    <result column="asset_sort" property="assetSort" jdbcType="VARCHAR" />
+    <result column="asset_amount" property="assetAmount" jdbcType="DECIMAL" />
+    <result column="asset_quantity" property="assetQuantity" jdbcType="SMALLINT" />
+    <result column="asset_status" property="assetStatus" jdbcType="VARCHAR" />
+    <result column="asset_comcode" property="assetComcode" jdbcType="VARCHAR" />
+    <result column="asset_upper_no" property="assetUpperNo" jdbcType="VARCHAR" />
+    <result column="asset_buy_date" property="assetBuyDate" jdbcType="TIMESTAMP" />
+    <result column="asset_current_status_date" property="assetCurrentStatusDate" jdbcType="TIMESTAMP" />
+    <result column="asset_attribute_level" property="assetAttributeLevel" jdbcType="VARCHAR" />
+    <result column="asset_warranty_period" property="assetWarrantyPeriod" jdbcType="SMALLINT" />
+    <result column="asset_use_num" property="assetUseNum" jdbcType="SMALLINT" />
+    <result column="asset_back_info" property="assetBackInfo" jdbcType="VARCHAR" />
+    <result column="insert_time_for_his" property="insertTimeForHis" jdbcType="TIMESTAMP" />
+    <result column="operate_time_for_his" property="operateTimeForHis" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, asset_no, asset_nature, asset_sort, asset_amount, asset_quantity, asset_status, 
+    asset_comcode, asset_upper_no, asset_buy_date, asset_current_status_date, asset_attribute_level, 
+    asset_warranty_period, asset_use_num, asset_back_info, insert_time_for_his, operate_time_for_his
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_ass_base_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_ass_base_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.fintech.oa.business.com.example.asset.po.AssetBaseInfo" >
+    insert into t_ass_base_info (id, asset_no, asset_nature, 
+      asset_sort, asset_amount, asset_quantity, 
+      asset_status, asset_comcode, asset_upper_no, 
+      asset_buy_date, asset_current_status_date, 
+      asset_attribute_level, asset_warranty_period, 
+      asset_use_num, asset_back_info, insert_time_for_his, 
+      operate_time_for_his)
+    values (#{id,jdbcType=INTEGER}, #{assetNo,jdbcType=VARCHAR}, #{assetNature,jdbcType=VARCHAR}, 
+      #{assetSort,jdbcType=VARCHAR}, #{assetAmount,jdbcType=DECIMAL}, #{assetQuantity,jdbcType=SMALLINT}, 
+      #{assetStatus,jdbcType=VARCHAR}, #{assetComcode,jdbcType=VARCHAR}, #{assetUpperNo,jdbcType=VARCHAR}, 
+      #{assetBuyDate,jdbcType=TIMESTAMP}, #{assetCurrentStatusDate,jdbcType=TIMESTAMP}, 
+      #{assetAttributeLevel,jdbcType=VARCHAR}, #{assetWarrantyPeriod,jdbcType=SMALLINT}, 
+      #{assetUseNum,jdbcType=SMALLINT}, #{assetBackInfo,jdbcType=VARCHAR}, #{insertTimeForHis,jdbcType=TIMESTAMP}, 
+      #{operateTimeForHis,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetBaseInfo" >
+    insert into t_ass_base_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="assetNo != null" >
+        asset_no,
+      </if>
+      <if test="assetNature != null" >
+        asset_nature,
+      </if>
+      <if test="assetSort != null" >
+        asset_sort,
+      </if>
+      <if test="assetAmount != null" >
+        asset_amount,
+      </if>
+      <if test="assetQuantity != null" >
+        asset_quantity,
+      </if>
+      <if test="assetStatus != null" >
+        asset_status,
+      </if>
+      <if test="assetComcode != null" >
+        asset_comcode,
+      </if>
+      <if test="assetUpperNo != null" >
+        asset_upper_no,
+      </if>
+      <if test="assetBuyDate != null" >
+        asset_buy_date,
+      </if>
+      <if test="assetCurrentStatusDate != null" >
+        asset_current_status_date,
+      </if>
+      <if test="assetAttributeLevel != null" >
+        asset_attribute_level,
+      </if>
+      <if test="assetWarrantyPeriod != null" >
+        asset_warranty_period,
+      </if>
+      <if test="assetUseNum != null" >
+        asset_use_num,
+      </if>
+      <if test="assetBackInfo != null" >
+        asset_back_info,
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his,
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="assetNo != null" >
+        #{assetNo,jdbcType=VARCHAR},
+      </if>
+      <if test="assetNature != null" >
+        #{assetNature,jdbcType=VARCHAR},
+      </if>
+      <if test="assetSort != null" >
+        #{assetSort,jdbcType=VARCHAR},
+      </if>
+      <if test="assetAmount != null" >
+        #{assetAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetQuantity != null" >
+        #{assetQuantity,jdbcType=SMALLINT},
+      </if>
+      <if test="assetStatus != null" >
+        #{assetStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="assetComcode != null" >
+        #{assetComcode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetUpperNo != null" >
+        #{assetUpperNo,jdbcType=VARCHAR},
+      </if>
+      <if test="assetBuyDate != null" >
+        #{assetBuyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetCurrentStatusDate != null" >
+        #{assetCurrentStatusDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetAttributeLevel != null" >
+        #{assetAttributeLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="assetWarrantyPeriod != null" >
+        #{assetWarrantyPeriod,jdbcType=SMALLINT},
+      </if>
+      <if test="assetUseNum != null" >
+        #{assetUseNum,jdbcType=SMALLINT},
+      </if>
+      <if test="assetBackInfo != null" >
+        #{assetBackInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="insertTimeForHis != null" >
+        #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetBaseInfo" >
+    update t_ass_base_info
+    <set >
+      <if test="assetNo != null" >
+        asset_no = #{assetNo,jdbcType=VARCHAR},
+      </if>
+      <if test="assetNature != null" >
+        asset_nature = #{assetNature,jdbcType=VARCHAR},
+      </if>
+      <if test="assetSort != null" >
+        asset_sort = #{assetSort,jdbcType=VARCHAR},
+      </if>
+      <if test="assetAmount != null" >
+        asset_amount = #{assetAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetQuantity != null" >
+        asset_quantity = #{assetQuantity,jdbcType=SMALLINT},
+      </if>
+      <if test="assetStatus != null" >
+        asset_status = #{assetStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="assetComcode != null" >
+        asset_comcode = #{assetComcode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetUpperNo != null" >
+        asset_upper_no = #{assetUpperNo,jdbcType=VARCHAR},
+      </if>
+      <if test="assetBuyDate != null" >
+        asset_buy_date = #{assetBuyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetCurrentStatusDate != null" >
+        asset_current_status_date = #{assetCurrentStatusDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetAttributeLevel != null" >
+        asset_attribute_level = #{assetAttributeLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="assetWarrantyPeriod != null" >
+        asset_warranty_period = #{assetWarrantyPeriod,jdbcType=SMALLINT},
+      </if>
+      <if test="assetUseNum != null" >
+        asset_use_num = #{assetUseNum,jdbcType=SMALLINT},
+      </if>
+      <if test="assetBackInfo != null" >
+        asset_back_info = #{assetBackInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fintech.oa.business.com.example.asset.po.AssetBaseInfo" >
+    update t_ass_base_info
+    set asset_no = #{assetNo,jdbcType=VARCHAR},
+      asset_nature = #{assetNature,jdbcType=VARCHAR},
+      asset_sort = #{assetSort,jdbcType=VARCHAR},
+      asset_amount = #{assetAmount,jdbcType=DECIMAL},
+      asset_quantity = #{assetQuantity,jdbcType=SMALLINT},
+      asset_status = #{assetStatus,jdbcType=VARCHAR},
+      asset_comcode = #{assetComcode,jdbcType=VARCHAR},
+      asset_upper_no = #{assetUpperNo,jdbcType=VARCHAR},
+      asset_buy_date = #{assetBuyDate,jdbcType=TIMESTAMP},
+      asset_current_status_date = #{assetCurrentStatusDate,jdbcType=TIMESTAMP},
+      asset_attribute_level = #{assetAttributeLevel,jdbcType=VARCHAR},
+      asset_warranty_period = #{assetWarrantyPeriod,jdbcType=SMALLINT},
+      asset_use_num = #{assetUseNum,jdbcType=SMALLINT},
+      asset_back_info = #{assetBackInfo,jdbcType=VARCHAR},
+      insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

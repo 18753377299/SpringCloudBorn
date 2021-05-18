@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fintech.oa.business.com.example.asset.dao.AssetApprRuleConfigMapper" >
+  <resultMap id="BaseResultMap" type="com.fintech.oa.business.com.example.asset.po.AssetApprRuleConfig" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="asset_check_type" property="assetCheckType" jdbcType="VARCHAR" />
+    <result column="asset_check_person_code" property="assetCheckPersonCode" jdbcType="VARCHAR" />
+    <result column="asset_check_person_name" property="assetCheckPersonName" jdbcType="VARCHAR" />
+    <result column="asset_apply_object" property="assetApplyObject" jdbcType="VARCHAR" />
+    <result column="asset_nature" property="assetNature" jdbcType="VARCHAR" />
+    <result column="asset_min_amount" property="assetMinAmount" jdbcType="DECIMAL" />
+    <result column="asset_max_amount" property="assetMaxAmount" jdbcType="DECIMAL" />
+    <result column="asset_check_rule" property="assetCheckRule" jdbcType="VARCHAR" />
+    <result column="asset_defend_date" property="assetDefendDate" jdbcType="TIMESTAMP" />
+    <result column="asset_defend_code" property="assetDefendCode" jdbcType="VARCHAR" />
+    <result column="is_validate_flag" property="isValidateFlag" jdbcType="VARCHAR" />
+    <result column="insert_time_for_his" property="insertTimeForHis" jdbcType="TIMESTAMP" />
+    <result column="operate_time_for_his" property="operateTimeForHis" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, asset_check_type, asset_check_person_code, asset_check_person_name, asset_apply_object, 
+    asset_nature, asset_min_amount, asset_max_amount, asset_check_rule, asset_defend_date, 
+    asset_defend_code, is_validate_flag, insert_time_for_his, operate_time_for_his
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_ass_appr_rule_config
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_ass_appr_rule_config
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.fintech.oa.business.com.example.asset.po.AssetApprRuleConfig" >
+    insert into t_ass_appr_rule_config (id, asset_check_type, asset_check_person_code, 
+      asset_check_person_name, asset_apply_object, 
+      asset_nature, asset_min_amount, asset_max_amount, 
+      asset_check_rule, asset_defend_date, asset_defend_code, 
+      is_validate_flag, insert_time_for_his, operate_time_for_his
+      )
+    values (#{id,jdbcType=INTEGER}, #{assetCheckType,jdbcType=VARCHAR}, #{assetCheckPersonCode,jdbcType=VARCHAR}, 
+      #{assetCheckPersonName,jdbcType=VARCHAR}, #{assetApplyObject,jdbcType=VARCHAR}, 
+      #{assetNature,jdbcType=VARCHAR}, #{assetMinAmount,jdbcType=DECIMAL}, #{assetMaxAmount,jdbcType=DECIMAL}, 
+      #{assetCheckRule,jdbcType=VARCHAR}, #{assetDefendDate,jdbcType=TIMESTAMP}, #{assetDefendCode,jdbcType=VARCHAR}, 
+      #{isValidateFlag,jdbcType=VARCHAR}, #{insertTimeForHis,jdbcType=TIMESTAMP}, #{operateTimeForHis,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetApprRuleConfig" >
+    insert into t_ass_appr_rule_config
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="assetCheckType != null" >
+        asset_check_type,
+      </if>
+      <if test="assetCheckPersonCode != null" >
+        asset_check_person_code,
+      </if>
+      <if test="assetCheckPersonName != null" >
+        asset_check_person_name,
+      </if>
+      <if test="assetApplyObject != null" >
+        asset_apply_object,
+      </if>
+      <if test="assetNature != null" >
+        asset_nature,
+      </if>
+      <if test="assetMinAmount != null" >
+        asset_min_amount,
+      </if>
+      <if test="assetMaxAmount != null" >
+        asset_max_amount,
+      </if>
+      <if test="assetCheckRule != null" >
+        asset_check_rule,
+      </if>
+      <if test="assetDefendDate != null" >
+        asset_defend_date,
+      </if>
+      <if test="assetDefendCode != null" >
+        asset_defend_code,
+      </if>
+      <if test="isValidateFlag != null" >
+        is_validate_flag,
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his,
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="assetCheckType != null" >
+        #{assetCheckType,jdbcType=VARCHAR},
+      </if>
+      <if test="assetCheckPersonCode != null" >
+        #{assetCheckPersonCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetCheckPersonName != null" >
+        #{assetCheckPersonName,jdbcType=VARCHAR},
+      </if>
+      <if test="assetApplyObject != null" >
+        #{assetApplyObject,jdbcType=VARCHAR},
+      </if>
+      <if test="assetNature != null" >
+        #{assetNature,jdbcType=VARCHAR},
+      </if>
+      <if test="assetMinAmount != null" >
+        #{assetMinAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetMaxAmount != null" >
+        #{assetMaxAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetCheckRule != null" >
+        #{assetCheckRule,jdbcType=VARCHAR},
+      </if>
+      <if test="assetDefendDate != null" >
+        #{assetDefendDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetDefendCode != null" >
+        #{assetDefendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="isValidateFlag != null" >
+        #{isValidateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="insertTimeForHis != null" >
+        #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetApprRuleConfig" >
+    update t_ass_appr_rule_config
+    <set >
+      <if test="assetCheckType != null" >
+        asset_check_type = #{assetCheckType,jdbcType=VARCHAR},
+      </if>
+      <if test="assetCheckPersonCode != null" >
+        asset_check_person_code = #{assetCheckPersonCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetCheckPersonName != null" >
+        asset_check_person_name = #{assetCheckPersonName,jdbcType=VARCHAR},
+      </if>
+      <if test="assetApplyObject != null" >
+        asset_apply_object = #{assetApplyObject,jdbcType=VARCHAR},
+      </if>
+      <if test="assetNature != null" >
+        asset_nature = #{assetNature,jdbcType=VARCHAR},
+      </if>
+      <if test="assetMinAmount != null" >
+        asset_min_amount = #{assetMinAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetMaxAmount != null" >
+        asset_max_amount = #{assetMaxAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="assetCheckRule != null" >
+        asset_check_rule = #{assetCheckRule,jdbcType=VARCHAR},
+      </if>
+      <if test="assetDefendDate != null" >
+        asset_defend_date = #{assetDefendDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="assetDefendCode != null" >
+        asset_defend_code = #{assetDefendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="isValidateFlag != null" >
+        is_validate_flag = #{isValidateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fintech.oa.business.com.example.asset.po.AssetApprRuleConfig" >
+    update t_ass_appr_rule_config
+    set asset_check_type = #{assetCheckType,jdbcType=VARCHAR},
+      asset_check_person_code = #{assetCheckPersonCode,jdbcType=VARCHAR},
+      asset_check_person_name = #{assetCheckPersonName,jdbcType=VARCHAR},
+      asset_apply_object = #{assetApplyObject,jdbcType=VARCHAR},
+      asset_nature = #{assetNature,jdbcType=VARCHAR},
+      asset_min_amount = #{assetMinAmount,jdbcType=DECIMAL},
+      asset_max_amount = #{assetMaxAmount,jdbcType=DECIMAL},
+      asset_check_rule = #{assetCheckRule,jdbcType=VARCHAR},
+      asset_defend_date = #{assetDefendDate,jdbcType=TIMESTAMP},
+      asset_defend_code = #{assetDefendCode,jdbcType=VARCHAR},
+      is_validate_flag = #{isValidateFlag,jdbcType=VARCHAR},
+      insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
