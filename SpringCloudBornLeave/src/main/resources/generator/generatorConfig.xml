@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="config/jdbc.properties"/>
+    <context id="MySqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 为模型生成序列化方法-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <!-- 为生成的Java模型创建一个toString方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <commentGenerator type="com.example.generator.CommentGenerator">
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+            <property name="addRemarkComments" value="true"/>
+            <!--             <property name="dateFormat" value="yyyy-MM-dd HH:mm:ss" /> -->
+        </commentGenerator>
+        <!-- master_mysql数据库 -->
+          <jdbcConnection driverClass="${jdbc.master.driverClassName}"
+                           connectionURL="${jdbc.master.url}"
+                           userId="${jdbc.master.username}"
+                           password="${jdbc.master.password}">
+<!--               解决mysql驱动升级到8.0后不生成指定数据库代码的问题-->
+               <property name="nullCatalogMeansCurrent" value="true" />
+           </jdbcConnection>
+
+        <!--salve_mysql数据库 -->
+        <!--  <jdbcConnection driverClass="${jdbc.slave.driverClassName}"
+                         connectionURL="${jdbc.slave.url}"
+                         userId="${jdbc.slave.username}"
+                         password="${jdbc.slave.password}">
+             解决mysql驱动升级到8.0后不生成指定数据库代码的问题
+             <property name="nullCatalogMeansCurrent" value="true" />
+         </jdbcConnection>
+          -->
+
+        <!--         oracle数据库 -->
+        <!--         <jdbcConnection driverClass="${jdbc.driverClassName.oracle}" -->
+        <!--                         connectionURL="${jdbc.url.oracle}" -->
+        <!--                         userId="${jdbc.username.oracle}" -->
+        <!--                         password="${jdbc.password.oracle}"> -->
+        <!--         </jdbcConnection> -->
+
+        <!--         informix数据库 -->
+        <!--         <jdbcConnection driverClass="${jdbc.driverClassName.informix}" -->
+        <!--                         connectionURL="${jdbc.url.informix}" -->
+        <!--                         userId="${jdbc.username.informix}" -->
+        <!--                         password="${jdbc.password.informix}"> -->
+        <!--         </jdbcConnection> -->
+
+        <!--         postgres数据库 -->
+        <!--<jdbcConnection driverClass="${jdbc.driverClassName.postgres}"
+                        connectionURL="${jdbc.url.postgres}"
+                        userId="${jdbc.username.postgres}"
+                        password="${jdbc.password.postgres}">
+        </jdbcConnection>-->
+
+
+        <javaModelGenerator targetPackage="com.fintech.oa.business.com.example.asset.po" targetProject="D:\FileWorkspace\eclipse_workspace\leaveBusiness-server\src\main\java">
+            <!-- TODO enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="true" />
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper/base" targetProject="D:\FileWorkspace\eclipse_workspace\leaveBusiness-server\src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.fintech.oa.business.com.example.asset.dao"
+                             targetProject="D:\FileWorkspace\eclipse_workspace\leaveBusiness-server\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--生成全部表tableName设为%-->
+        <table tableName="t_ass_base_info" domainObjectName="AssetBaseInfo" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+        <table tableName="t_ass_relation" domainObjectName="AssetRelation" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+        <table tableName="t_ass_track" domainObjectName="AssetTrack" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+        <table tableName="t_ass_apply" domainObjectName="AssetApply" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <!--             <generatedKey column="id" sqlStatement="MySql" identity="true"/> -->
+            <!--             <generatedKey column="riskmodel" sqlStatement="MySql" identity="true"/> -->
+            <!--              <generatedKey column="factorno" sqlStatement="MySql" identity="true"/> -->
+            <!--              <generatedKey column="dangertype" sqlStatement="MySql" identity="true"/> -->
+            <!-- 如果设置为true，生成的model类会直接使用column本身的名字，而不会再使用驼峰命名方法 -->
+            <property name="useActualColumnNames" value="false" />
+            <!-- 				<property name="useActualColumnNames" value="true" /> -->
+        </table>
+
+        <table tableName="t_ass_apply_list" domainObjectName="AssetApplyList" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+        <table tableName="t_ass_appr_rule_config" domainObjectName="AssetApprRuleConfig" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+
+        <!--<table tableName="t_asset_stand_field" domainObjectName="AssetStandField" enableInsert="true" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>-->
+
+    </context>
+</generatorConfiguration>

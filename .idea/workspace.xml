@@ -5,13 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f04dd79d-2f41-436f-9e4f-c7f53159461b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/AuthServerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/ResourceServerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/api/AssetExternalSystemApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/api/AssetManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyListMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApprRuleConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetBaseInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetTrackMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApplyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApprRuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetBaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetTrack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/service/AssetManageStockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/service/impl/AssetManageStockServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/vo/AssetLaunchPurchaseVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/vo/AssetPurchaseQueryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/LeaveResponseVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/ResultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/generator/CommentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/generator/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/api/LeaveApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveBasicDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveMainDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveSpecialDateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeavePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveSpecdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/LeaveAttendanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/LeaveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/vo/AttendanceRequestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/vo/AttendanceVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/api/LoginApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/dao/LoginDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/api/RiskInfoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/dao/RiskCheckMainDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/dao/RiskInfoClaimDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckAssess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckMainLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckVenture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskInfoClaim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/service/RiskInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/vo/RiskClaimVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/vo/RiskInfoClaimRequestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/config/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetApplyListMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetApplyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetApprRuleConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetBaseInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/base/AssetTrackMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/DeptMapperDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/LeaveBasicDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/LeaveMainDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/RiskCheckMainDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/RiskInfoClaimDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/mapper/custom/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/asset/assert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/asset/riskDcode_20201203.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/leave/leave.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/riskcheck/riskcheck.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/riskinfo/riskinfo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/test/test.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudBornLeave/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudBornLeave/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/LeaveApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/LeaveApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudBornLeave/src/test/java/com/example/leave/LeaveApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudBornLeave/src/test/java/com/example/leave/LeaveApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,106 +131,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="137" column="35" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="35" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/SpringCloudBornAuthApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/dept/controller/DeptController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/dept/controller/RefreshController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/SpringCloudBorn/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/SecurityConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/HttpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1859#1860#0" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/ResourceServerConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="381">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/AuthServerConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="90" lean-forward="true" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -167,8 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isBlank</find>
-      <find>application.yml</find>
       <find>zuul</find>
       <find>zuulProperties</find>
       <find>prefix</find>
@@ -197,9 +182,12 @@
       <find>DeptClientService</find>
       <find>Dept</find>
       <find>findById</find>
+      <find>leave</find>
+      <find>springfox-swagger2</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>SpringCloudBornLeave</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -208,26 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpringCloudBorn-zuul-gateway-9528/README.md" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-zuul-gateway-9528/src/main/java/com/example/common/filter/PreZuulFilter.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-zuul-gateway-9528/src/main/java/com/example/common/filter/RouteZuulFilter.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBornConfig/src/main/resources/config/SpringCloudBorn-zuul-gateway-dev.yml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-zuul-gateway-9528/src/main/resources/sql/zuul.sql" />
-        <option value="$PROJECT_DIR$/SpringCloudBornConfig/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/test/java/com/example/AppTest.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBornConfig/src/main/resources/config/SpringCloudBorn-dept-dev.yml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-dept-8002/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-dept-8003/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-config-dept-client-8001/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-dept-8002/src/main/java/com/example/AppProviderDept_8002.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/.project" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/dao/DeptDao.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/resources/application-test.yml" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/filter/PostZuulFilter.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/service/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/config/CustomRouteLocator.java" />
         <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/SpringCloudZuulApp.java" />
         <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/hystrix/DeptClientService.java" />
         <option value="$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/hystrix/impl/DeptClientServiceFallbackFactory.java" />
@@ -250,7 +218,6 @@
         <option value="$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources/mybatis/mapper/DeptMapper.xml" />
         <option value="$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/controller/DeptController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/test/java/com/example/auth/SpringCloudBornAuthApplicationTests.java" />
@@ -259,37 +226,49 @@
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/SpringCloudBornAuthApplication.java" />
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/AuthServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/ResponseResult.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/LeaveAttendanceService.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/dao/RiskCheckMainDao.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/asset/vo/AssetPurchaseQueryVo.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/vo/AssetPurchaseQueryVo.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/LeaveApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetTrackMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/service/impl/AssetManageStockServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyListMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApprRuleConfigMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetBaseInfoMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetRelationMapper.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/api/AssetManageController.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/api/LeaveApi.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/test/java/com/example/leave/LeaveApplicationTests.java" />
+        <option value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/HttpUtil.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\FileRun\maven" />
+        <option name="mavenHome" value="D:/FileRun/maven" />
         <option name="userSettingsFile" value="D:\FileRun\maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SpringCloudBornConfig" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SpringCloudBornZuulGateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="162" />
-    <option name="y" value="110" />
-    <option name="width" value="1667" />
-    <option name="height" value="774" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="95" />
+    <option name="y" value="31" />
+    <option name="width" value="1674" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectId" id="1nW9cYRP9tmlfbxRsDEMP42I4fP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -298,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,47 +287,7 @@
             <path>
               <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringCloudBornAuth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringCloudBornLeave" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
@@ -358,26 +296,13 @@
             </path>
             <path>
               <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringCloudBorn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringCloudBorn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -406,24 +331,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605607874418" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OA_New/security-oauth2-sso-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringCloudBornLeave/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.po" />
       <recent name="com.example.common.utils" />
       <recent name="com.example.hystrix.impl" />
       <recent name="com.example.hystrix" />
       <recent name="com.example.func.hystrix" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBorn-provider-dept-8001\src\main\java\com\example" />
-      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornZuulGateway\src\main\java\com\example" />
+      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornLeave\src\main\java" />
+      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornLeave\src\main\java\com\example" />
+      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornLeave\src\main\java\com\example\leave" />
+      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornLeave\src\main\resources" />
+      <recent name="D:\FileWorkspace\eclipse_workspace\SpringCloudBorn\SpringCloudBornLeave\src\main\java\com\example\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,7 +370,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppProviderHystrixDept_8001">
+  <component name="RunManager" selected="Application.HttpUtil">
+    <configuration name="HttpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.common.HttpUtil" />
+      <module name="SpringCloudBornLeave" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaEight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.JavaEight" />
       <module name="SpringCloudBorn-zuul-gateway-9528" />
@@ -601,15 +546,15 @@
       </method>
     </configuration>
     <configuration name="LeaveApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="leave" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.leave.LeaveApplication" />
+      <module name="SpringCloudBornLeave" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.LeaveApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="LeaveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SpringCloudBornLeave" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.leave.LeaveApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.LeaveApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -643,6 +588,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpUtil" />
         <item itemvalue="Spring Boot.SpringCloudZuulApp" />
         <item itemvalue="Application.JavaEight" />
         <item itemvalue="Maven.SpringCloudBorn [compile]" />
@@ -696,11 +642,13 @@
       <workItem from="1618450454220" duration="14491000" />
       <workItem from="1618477092422" duration="4232000" />
       <workItem from="1620983883383" duration="3113000" />
+      <workItem from="1621213527762" duration="598000" />
+      <workItem from="1621320661858" duration="5033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76750000" />
+    <option name="totallyTimeSpent" value="82381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,10 +660,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="88" width="1333" height="619" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34509805" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28686327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -725,7 +673,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.0945946" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14733543" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1686217" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859354" weight="0.40762463" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,11 +684,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014065" side_tool="true" weight="0.51632047" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.4243421" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32397407" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.17155425" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32258064" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="2" weight="0.43215686" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.43163538" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.21835232" />
@@ -905,326 +853,96 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/hystrix/DeptClientService.java" />
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/SpringCloudZuulApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/hystrix/impl/DeptClientServiceFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/hystrix/DeptClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/config/CustomZuulConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/filter/PreZuulFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/filter/PostZuulFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/common/config/CustomRouteLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-consumer-dept-feign/src/main/java/com/example/controller/DeptController_Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.18/lombok-1.16.18-sources.jar!/lombok/ToString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-746">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="21" selection-start-line="18" selection-start-column="2" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="107" column="38" selection-start-line="96" selection-start-column="6" selection-end-line="107" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.2.5.RELEASE/spring-cloud-commons-1.2.5.RELEASE.jar!/org/springframework/cloud/client/circuitbreaker/EnableCircuitBreaker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/common/utils/SpringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/hystrix/impl/DeptClientServiceFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/service/DeptService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/service/impl/DeptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/hystrix/DeptClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/hystrix/impl/DeptClientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/service/DeptService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/dao/DeptDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn_api/src/main/java/org/SpringCloudBorn_api/entities/Dept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveBasicDao.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources/mybatis/mybatis.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/LeaveService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveMainDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveMain.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveBasic.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/vo/AttendanceRequestVo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/dao/LeaveSpecialDateDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/service/LeaveAttendanceService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/dao/LoginDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/login/api/LoginApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="213">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources/mybatis/mapper/DeptMapper.xml">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckVenture.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskInfoClaim.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/vo/RiskInfoClaimRequestVo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckAssess.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/service/RiskInfoService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/po/RiskCheckImage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/vo/RiskClaimVo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/api/RiskInfoApi.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/dao/RiskInfoClaimDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/riskinfo/dao/RiskCheckMainDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApply.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApplyList.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/vo/AssetLaunchPurchaseVo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetApprRuleConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/po/AssetTrack.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/vo/AssetPurchaseQueryVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="189">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12-sources.jar!/com/netflix/hystrix/contrib/javanica/command/MethodExecutionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/AppProviderHystrixDept_8001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/AppProviderDept_8001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12-sources.jar!/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3132">
-          <caret line="151" column="52" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/service/impl/DeptClientServiceFallbackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/service/DeptClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/service/impl/DeptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#532#533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/java/com/example/controller/DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-dept-8001/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBorn-provider-Hystrix-dept-8001/src/main/java/com/example/controller/DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornConfig/pom.xml">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="11" selection-start-line="4" selection-start-column="2" selection-end-line="8" selection-end-column="11" />
@@ -1232,22 +950,148 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="216">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/po/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="137" column="35" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/asset/riskDcode_20201203.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/asset/assert.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/sql/leave/leave.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="98" column="35" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/LeaveApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/po/LeaveSpecdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/SpringCloudBorn/App.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="246">
+          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/service/impl/AssetManageStockServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/test/java/com/example/auth/SpringCloudBornAuthApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApprRuleConfigMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetBaseInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/api/AssetManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/api/AssetExternalSystemApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetApplyListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/test/java/com/example/leave/LeaveApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
@@ -1257,71 +1101,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/dept/controller/DeptController.java">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/leave/api/LeaveApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornZuulGateway/src/main/java/com/example/func/dept/controller/RefreshController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/SpringCloudBornAuthApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/ResourceServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="389">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/AuthServerConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/asset/dao/AssetTrackMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="90" lean-forward="true" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+        <state relative-caret-position="216">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloudBornAuth/src/main/java/com/example/auth/common/config/SecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/SpringCloudBornLeave/src/main/java/com/example/common/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="381">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
           </folding>
         </state>
       </provider>

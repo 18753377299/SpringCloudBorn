@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fintech.oa.business.com.example.asset.dao.AssetTrackMapper" >
+  <resultMap id="BaseResultMap" type="com.fintech.oa.business.com.example.asset.po.AssetTrack" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="asset_id" property="assetId" jdbcType="INTEGER" />
+    <result column="asset_operate_code" property="assetOperateCode" jdbcType="VARCHAR" />
+    <result column="asset_staff_code" property="assetStaffCode" jdbcType="VARCHAR" />
+    <result column="asset_status" property="assetStatus" jdbcType="VARCHAR" />
+    <result column="operate_date" property="operateDate" jdbcType="TIMESTAMP" />
+    <result column="insert_time_for_his" property="insertTimeForHis" jdbcType="TIMESTAMP" />
+    <result column="operate_time_for_his" property="operateTimeForHis" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, asset_id, asset_operate_code, asset_staff_code, asset_status, operate_date, insert_time_for_his, 
+    operate_time_for_his
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_ass_track
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_ass_track
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.fintech.oa.business.com.example.asset.po.AssetTrack" >
+    insert into t_ass_track (id, asset_id, asset_operate_code, 
+      asset_staff_code, asset_status, operate_date, 
+      insert_time_for_his, operate_time_for_his
+      )
+    values (#{id,jdbcType=INTEGER}, #{assetId,jdbcType=INTEGER}, #{assetOperateCode,jdbcType=VARCHAR}, 
+      #{assetStaffCode,jdbcType=VARCHAR}, #{assetStatus,jdbcType=VARCHAR}, #{operateDate,jdbcType=TIMESTAMP}, 
+      #{insertTimeForHis,jdbcType=TIMESTAMP}, #{operateTimeForHis,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetTrack" >
+    insert into t_ass_track
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="assetId != null" >
+        asset_id,
+      </if>
+      <if test="assetOperateCode != null" >
+        asset_operate_code,
+      </if>
+      <if test="assetStaffCode != null" >
+        asset_staff_code,
+      </if>
+      <if test="assetStatus != null" >
+        asset_status,
+      </if>
+      <if test="operateDate != null" >
+        operate_date,
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his,
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="assetId != null" >
+        #{assetId,jdbcType=INTEGER},
+      </if>
+      <if test="assetOperateCode != null" >
+        #{assetOperateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetStaffCode != null" >
+        #{assetStaffCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetStatus != null" >
+        #{assetStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="operateDate != null" >
+        #{operateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="insertTimeForHis != null" >
+        #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.fintech.oa.business.com.example.asset.po.AssetTrack" >
+    update t_ass_track
+    <set >
+      <if test="assetId != null" >
+        asset_id = #{assetId,jdbcType=INTEGER},
+      </if>
+      <if test="assetOperateCode != null" >
+        asset_operate_code = #{assetOperateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetStaffCode != null" >
+        asset_staff_code = #{assetStaffCode,jdbcType=VARCHAR},
+      </if>
+      <if test="assetStatus != null" >
+        asset_status = #{assetStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="operateDate != null" >
+        operate_date = #{operateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="insertTimeForHis != null" >
+        insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operateTimeForHis != null" >
+        operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.fintech.oa.business.com.example.asset.po.AssetTrack" >
+    update t_ass_track
+    set asset_id = #{assetId,jdbcType=INTEGER},
+      asset_operate_code = #{assetOperateCode,jdbcType=VARCHAR},
+      asset_staff_code = #{assetStaffCode,jdbcType=VARCHAR},
+      asset_status = #{assetStatus,jdbcType=VARCHAR},
+      operate_date = #{operateDate,jdbcType=TIMESTAMP},
+      insert_time_for_his = #{insertTimeForHis,jdbcType=TIMESTAMP},
+      operate_time_for_his = #{operateTimeForHis,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

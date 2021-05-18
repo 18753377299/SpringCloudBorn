@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.riskinfo.dao.RiskCheckMainDao">
+	<!-- 通用查询结果对象-->
+	<resultMap id="RiskCheckMainResultMap"  type="com.example.riskinfo.po.RiskCheckMain">
+		<id column="riskcheckno" property="riskCheckNo" />
+		<result column="comcode" property="comCode" />
+		<result column="checkmodel" property="checkModel"/>
+		<result column="insuredtype" property="insuredType"/>
+		<result column="insuredcode" property="insuredCode"/>
+		<result column="insuredname" property="insuredName"/>
+		<result column="addressdetail" property="addressDetail"/>
+		<result column="addresscode" property="addressCode" />
+		<result column="addressprovince" property="addressProvince" />
+		<result column="addresscity" property="addressCity" />
+		<result column="addresscounty" property="addressCounty" />
+		<result column="businesssource" property="businessSource" />
+		<result column="businessclass" property="businessClass"/>
+		<result column="unitnature" property="unitNature"/>
+		<result column="operatorcode" property="operatorCode" />
+		<result column="operatorcode_uni" property="operatorCodeUni" />
+		<result column="undwrtsubmitdate" property="undwrtsubmitDate" />
+		<result column="underwriteflag" property="underwriteFlag"/>
+		<result column="underwritedate" property="underwriteDate"/>
+		<result column="underwritecode" property="underwriteCode"/>
+		<result column="underwritename" property="underwriteName"/>
+		<result column="checkcomcode" property="checkComCode"/>
+		<result column="checker" property="checker" />
+		<result column="checkdate" property="checkDate" />
+		<result column="madedate" property="madeDate" />
+		<result column="mobileflag" property="mobileFlag"/>
+		<result column="highlightrisk" property="highlightRisk"/>
+		<result column="score" property="score"/>
+		<result column="executionid" property="executionId" />
+		<result column="repulsesugggest" property="repulseSugggest" />
+		<result column="pointx_2000" property="pointx2000"/>
+		<result column="pointy_2000" property="pointy2000"/>
+		<result column="pointx_02" property="pointx02" />
+		<result column="pointy_02" property="pointy02" />
+		<result column="inserttimeforhis" property="insertTimeForHis" />
+		<result column="operatetimeforhis" property="operateTimeForHis"/>
+		
+		<collection property="riskCheckAssessList" ofType="com.example.riskinfo.po.RiskCheckAssess">
+			<id column="riskcheckno" property="riskCheckNo"/>
+			<result column="envdanger" property="envDanger" />
+			<result column="impdanger" property="impDanger" />
+			<result column="builddanger" property="buildDanger"/>
+			<result column="cargodanger" property="cargoDanger"/>
+			<result column="typdanger" property="typDanger"/>
+			<result column="flooddanger" property="floodDanger" />
+			<result column="inserttimeforhis" property="insertTimeForHis"/>
+			<result column="operatetimeforhis" property="operateTimeForHis"/>
+		</collection>
+		
+		<collection property="riskCheckImageList" ofType="com.example.riskinfo.po.RiskCheckImage">
+			<id column="id" property="id"/>
+			<result column="riskCheckNo" property="riskCheckNo" />
+			<result column="imagtype" property="imagType" />
+			<result column="imagtypecname" property="imagTypeCName"/>
+			<result column="imageid" property="imageId"/>
+			<result column="imagename" property="imageName"/>
+			<result column="imageurl" property="imageUrl" />
+			<result column="remark" property="remark" />
+			<result column="insertTimeForHis" property="insertTimeForHis"/>
+			<result column="operateTimeForHis" property="operateTimeForHis"/>
+		</collection>
+		
+		<collection property="riskCheckVentureList" ofType="com.example.riskinfo.po.RiskCheckVenture">
+			<id column="riskCheckNo" property="riskCheckNo"/>
+<!-- 			<result column="envdanger" property="characteristics" /> -->
+			<result column="impdanger" property="rainRecord" />
+			<result column="itemDistance" property="itemDistance"/>
+			<result column="comparedDegree" property="comparedDegree"/>
+			<result column="comparedTerrain" property="comparedTerrain"/>
+			<result column="itemEnvironment" property="itemEnvironment" />
+			<result column="LargeProjects" property="largeProjects" />
+			<result column="LargeProImpact" property="largeProImpact" />
+			<result column="waterSensitivity" property="waterSensitivity"/>
+			<result column="underAssetsFlag" property="underAssetsFlag"/>
+			<result column="HistoricWater" property="historicWater"/>
+			<result column="ManSituation" property="manSituation" />
+			<result column="lowEquipment" property="lowEquipment" />
+			<result column="ownership" property="ownership" />
+			<result column="constructBuild" property="constructBuild"/>
+			<result column="airStorageFlag" property="airStorageFlag"/>
+			<result column="BuildYears" property="buildYears"/>
+			<result column="DoorFlag" property="doorFlag" />
+			<result column="staggeredFlag" property="staggeredFlag" />
+			<result column="drainageMethod" property="drainageMethod" />
+			<result column="drainageBlock" property="drainageBlock" />
+<!-- 			<result column="builddanger" property="dredgeCondition"/> -->
+			<result column="connectedFlag" property="connectedFlag"/>
+			<result column="UnobstructedFlag" property="unobstructedFlag"/>
+			<result column="HaveCanal" property="haveCanal" />
+			<result column="cargoWaterSen" property="cargoWaterSen" />
+			<result column="StoForm" property="stoForm" />
+			<result column="StoLocation" property="stoLocation"/>
+			<result column="EmiForm" property="emiForm"/>
+			<result column="ConMaterials" property="conMaterials"/>
+			<result column="DraEquipment" property="draEquipment" />
+			<result column="ConPlan" property="conPlan" />
+			<result column="dutyFlag" property="dutyFlag" />
+			<result column="MonitorFlag" property="monitorFlag"/>
+			<result column="transferFlag" property="transferFlag"/>
+			<result column="insertTimeForHis" property="insertTimeForHis"/>
+			<result column="operateTimeForHis" property="operateTimeForHis"/>
+		</collection>
+		
+	</resultMap>
+	<!-- 风控巡检查询查询条件拼写 -->
+	<sql id="queryRiskCheckMainSql">
+		main.riskcheckno = assess.riskcheckno and main.riskcheckno=image.riskCheckNo
+					and main.riskcheckno= venture.riskCheckNo
+<!-- 		<if test=""> -->
+<!-- 		</if> -->
+	</sql>
+	<!--查询风控巡检信息 -->
+	<select id="queryRiskCheckMain" resultMap="RiskCheckMainResultMap">
+		select  main.*,assess.*,image.*,venture.* from riskcheck_main  main,riskcheck_assess assess ,
+ 		riskcheck_image image,riskcheck_venture venture  
+			
+<!-- 		select * from riskcheck_main -->
+		<where>
+			<include refid="queryRiskCheckMainSql"/>
+		</where>
+	</select>
+	
+	<select id="queryRiskCheckMainCount" parameterType="Integer">
+		select count(*) from riskcheck_main  main,riskcheck_assess assess ,
+ 		riskcheck_image image,riskcheck_venture venture 
+<!-- 		select count(*) from riskcheck_main -->
+		<where>
+			<include refid="queryRiskCheckMainSql"/>
+		</where>
+	</select>
+	
+<!-- 	<insert id=""></insert> -->
+	
+	
+</mapper>
